@@ -1,5 +1,5 @@
 body{
-       	 background: black;   
+       	 background-image:url(../image/back.png);   
    	 font-family: Helvetica, arial, sans-serif;
 	
 width:100%;
@@ -23,7 +23,6 @@ width:100%;
 #menu{	
 	position:relative;
 	bottom:49px;
-	background-color:#202126;
 	color:#C0C0C0;
 	display:block;
 	height:120px;

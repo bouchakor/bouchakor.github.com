@@ -21,32 +21,38 @@
 	  })();
 
 	</script>
+	
+		<script type="text/javascript">
+            $(function() {
+                $('#navigation a').stop().animate({'marginLeft':'85px'},1000);
 
+                $('#navigation > li').hover(
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'2px'},200);
+                    },
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'85px'},200);
+                    }
+                );
+            });
+        </script>
 	</head>
 
 	<body>
-		
+		<ul id="navigation">
+		    <li class="home"><a href="index.html" title="Home">Home</a></li>
+		    <li class="about"><a href="formation.html" title="Formation">Formation</a></li>
+		    <li class="search"><a href="experience.html" title="Experiences">Expériences</a></li>
+		    <li class="rssfeed"><a href="support_projets.html" title="Support and Projets">Supports && Projets</a></li>
+		    <li class="podcasts"><a href="cv.html" title="CV">CV</a></li>
+		    <li class="contact"><a href="contact.html" title="Contact">Contact</a></li>
+		 </ul>
 		<div id="menu">
 		<div class="header">
 			<h2>Zakaria Bouchakor</h2>
 		</div>
-			<h2 style="float:left;">
-			<script type="text/javascript">
-				Today = new Date;
-				date = Today.getDate() + "/" + (Today.getMonth()+1) + "/" + Today.getFullYear();
-				document.write(date);
-			</script>
-			</h2>
-		    <div id="nav">
-			    <ul>
-				<li><a href="index.html">Bref</a></li>
-				<li><a href="formation.html">Formation</a></li>
-				<li><a href="experience.html">Expériences</a></li>
-				<li><a href="loisirs.html">Loisirs</a></li>
-				<li><a href="support_projets.html">Supports && Projets</a></li>
-				<li><a href="cv.html">CV</a><li>
-			    </ul>
-		    </div>
+
+		
 		
 		</div>
 		

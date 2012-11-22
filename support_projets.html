@@ -23,14 +23,14 @@
 	</script>
 	<script type="text/javascript">
             $(function() {
-                $('#navigation a').stop().animate({'marginLeft':'85px'},1000);
+                $('#navigation a').stop().animate({'marginLeft':'55px'},1000);
 
                 $('#navigation > li').hover(
                     function () {
                         $('a',$(this)).stop().animate({'marginLeft':'2px'},200);
                     },
                     function () {
-                        $('a',$(this)).stop().animate({'marginLeft':'85px'},200);
+                        $('a',$(this)).stop().animate({'marginLeft':'55px'},200);
                     }
                 );
             });
@@ -54,44 +54,60 @@
 		
 		</div>
 		
-		<div id="contents">
+					
+			<!-- Codrops top bar -->
+ 			
 
-			<div class="formation">
-				
-				<h3><strong>2012</strong></h3>
-				<div>
-					<span>Stage:</span>
+		<section class="tabs">
+			<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+			<label for="tab-1" class="tab-label-1">PHP</label>
+
+			<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+			<label for="tab-2" class="tab-label-2">Java</label>
+
+			<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+			<label for="tab-3" class="tab-label-3">C++</label>
+
+			<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+			<label for="tab-4" class="tab-label-4">Oracle</label>
+
+			<input id="tab-5" type="radio" name="radio-set" class="tab-selector-5" />
+			<label for="tab-5" class="tab-label-5">Web</label>
+	    		
+			<div class="clear-shadow"></div>
+		
+			<div class="content">
+				<div class="content-1">
+						<h2>PHP</h2>
+
+				</div>
+				<div class="content-2">
+						<h2>Java</h2>
+
+				 </div>
+				<div class="content-3">
+						<h2>C++</h2>
+
+				</div>
+				<div class="content-4">
+						<h2>Oracle</h2>
+
+				</div>
+				<div class="content-5">
+					<h2>Web</h2>
 					<ul>
-						<li> <a href="http://www.private-test.com/">private-test</a></li>
+						<li> <a href="http://www.private-test.com/">Private-test</a></li>
 						<li> <a href="http://www.cabourg.net/">Cabourg</a></li>	
-						<li> <a href="http://erige.aker.fidesio.com/">agence immobiliere erige</a></li>
+						<li> <a href="http://www.erige.net/">Erige</a></li>
 						<li> .</li>	
 						<li> .</li>
 						<li> .</li>			
 					</ul>
-				
+
 				</div>
-			
-				<div>
-					<span><strong>Formation</strong> Master 2:</span>
-					<ul>
-						<li> Web service</a></li>
-						<li> base de donnée distribué</a></li>	
-								
-					</ul>
-				
-				</div>
-		
-				<div style="position:relative; margin-left:246px;">
-			<img src="image/construction.gif" alt="Smiley face" height="300" width="300" />
 			</div>
-
-
-
-
-			
-		       </div>
-		</div>
-
+		</section>
+		
+		
 	</body>
 </html>

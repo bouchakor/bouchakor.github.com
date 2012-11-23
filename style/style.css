@@ -161,6 +161,11 @@ Tabs
 	left: 360px;
 }
 
+.tabs input#tab-5{
+	left: 480px;
+}
+
+
 .tabs label {
 	background: #5ba4a4;
 	background: -moz-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
@@ -204,7 +209,7 @@ Tabs
 }
 
 .tabs label:first-of-type {
-    z-index: 4;
+    z-index: 5;
     box-shadow: 2px 0 2px rgba(0,0,0,0.1);
 }
 
@@ -220,7 +225,7 @@ Tabs
     z-index: 2;
 }
 
-.tab-label-4 {
+.tab-label-5 {
     z-index: 1;
 }
 

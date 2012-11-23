@@ -293,7 +293,7 @@ Tabs
 
 
 
-.content div p {
+.content div p.gal {
 	font-size: 14px;
 	line-height: 22px;
 	font-style: italic;
@@ -377,7 +377,11 @@ Popup
 	overflow: auto;
 	width: 100%;
 	padding: 0 10px 0;
-}
+}/*
+#lightbox-image{
+	width: 600px;
+	height:600px;
+}*/
 #lightbox-container-image-data {
 	padding: 0 10px; 
 	color: #666; 

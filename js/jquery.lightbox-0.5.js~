@@ -31,7 +31,7 @@
 			imageBtnPrev:			'image/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
 			imageBtnNext:			'image/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
 			imageBtnClose:			'image/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
-			imageBlank:				'images/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
+			imageBlank:				'image/lightbox-blank.gif',			// (string) Path and the name of a blank image (one pixel)
 			// Configuration related to container image box
 			containerBorderSize:	10,			// (integer) If you adjust the padding in the CSS for the container, #lightbox-container-image-box, you will need to update this value
 			containerResizeSpeed:	400,		// (integer) Specify the resize duration of container image. These number are miliseconds. 400 is default.
@@ -132,15 +132,15 @@
 			$('#jquery-overlay').css({
 				backgroundColor:	settings.overlayBgColor,
 				opacity:			settings.overlayOpacity,
-				width:				arrPageSizes[0],
-				height:				arrPageSizes[1]
+				width:				arrPageSizes[0]/2,
+				height:				arrPageSizes[1]/2
 			}).fadeIn();
 			// Get page scroll
 			var arrPageScroll = ___getPageScroll();
 			// Calculate top and left offset for the jquery-lightbox div object and show it
 			$('#jquery-lightbox').css({
-				top:	arrPageScroll[1] + (arrPageSizes[3] / 10),
-				left:	arrPageScroll[0]
+				top:	arrPageScroll[1]/2 + (arrPageSizes[3] / 10),
+				left:	arrPageScroll[0]/2
 			}).show();
 			// Assigning click events in elements to close overlay
 			$('#jquery-overlay,#jquery-lightbox').click(function() {
@@ -157,15 +157,15 @@
 				var arrPageSizes = ___getPageSize();
 				// Style overlay and show it
 				$('#jquery-overlay').css({
-					width:		arrPageSizes[0],
-					height:		arrPageSizes[1]
+					width:		arrPageSizes[0]/2,
+					height:		arrPageSizes[1]/2
 				});
 				// Get page scroll
 				var arrPageScroll = ___getPageScroll();
 				// Calculate top and left offset for the jquery-lightbox div object and show it
 				$('#jquery-lightbox').css({
-					top:	arrPageScroll[1] + (arrPageSizes[3] / 10),
-					left:	arrPageScroll[0]
+					top:	arrPageScroll[1]/2 + (arrPageSizes[3] / 10),
+					left:	arrPageScroll[0]/2
 				});
 			});
 		}
@@ -201,14 +201,14 @@
 		 */
 		function _resize_container_image_box(intImageWidth,intImageHeight) {
 			// Get current width and height
-			var intCurrentWidth = $('#lightbox-container-image-box').width();
-			var intCurrentHeight = $('#lightbox-container-image-box').height();
+			var intCurrentWidth = $('#lightbox-container-image-box').width()/2;
+			var intCurrentHeight = $('#lightbox-container-image-box').height()/2;
 			// Get the width and height of the selected image plus the padding
-			var intWidth = (intImageWidth + (settings.containerBorderSize * 2)); // Plus the image큦 width and the left and right padding value
-			var intHeight = (intImageHeight + (settings.containerBorderSize * 2)); // Plus the image큦 height and the left and right padding value
+			var intWidth = (intImageWidth + (settings.containerBorderSize * 2))/2; // Plus the image큦 width and the left and right padding value
+			var intHeight = (intImageHeight + (settings.containerBorderSize * 2))/2; // Plus the image큦 height and the left and right padding value
 			// Diferences
-			var intDiffW = intCurrentWidth - intWidth;
-			var intDiffH = intCurrentHeight - intHeight;
+			var intDiffW = (intCurrentWidth - intWidth)/2;
+			var intDiffH = (intCurrentHeight - intHeight)/2;
 			// Perfomance the effect
 			$('#lightbox-container-image-box').animate({ width: intWidth, height: intHeight },settings.containerResizeSpeed,function() { _show_image(); });
 			if ( ( intDiffW == 0 ) && ( intDiffH == 0 ) ) {
@@ -218,8 +218,8 @@
 					___pause(100);	
 				}
 			} 
-			$('#lightbox-container-image-data-box').css({ width: intImageWidth });
-			$('#lightbox-nav-btnPrev,#lightbox-nav-btnNext').css({ height: intImageHeight + (settings.containerBorderSize * 2) });
+			$('#lightbox-container-image-data-box').css({ width: intImageWidth/2 });
+			$('#lightbox-nav-btnPrev,#lightbox-nav-btnNext').css({ height: (intImageHeight + (settings.containerBorderSize * 2))2 });
 		};
 		/**
 		 * Show the prepared image

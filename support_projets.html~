@@ -38,7 +38,7 @@
 
 	
 	    $(function() {
-		$('#gallery a').lightBox();
+		$('#gallery a#pop').lightBox();
 	    });
    
         </script>
@@ -98,15 +98,16 @@
 
 						<h2>Java</h2>
 						<h3>Web Service Rest</h3>
-						<p>Google Maps, moteur de recherche Web, flux RSS, d'un calendrier des événements Google, recherche de vidéo sur Youtube.
+						<p>Google Maps, moteur de recherche, flux RSS, calendrier des événements Google, recherche de vidéo sur Youtube.
 </p>
 						<ul>
 								<li>JQuery</li>
 								<li>GraphStream</li>	
 								<li>Ajax</li>
 								<li>Java</li>		
-					 	</ul>	
-							            <a href="image/web_service.png" title="">
+					 	</ul>			
+								<p><a href="https://github.com/bouchakor/web_service_rest/archive/master.zip">Source</a></p>
+							            <a id="pop" href="image/web_service.png" title="">
 									<img src="image/web_service.png" width="72" height="72" alt="" />
 								    </a>
 

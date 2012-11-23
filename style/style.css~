@@ -127,6 +127,7 @@ Tabs
     position: relative;
 	margin: 40px auto;
 	width: 750px;
+	height:1000px;
 	bottom:49px;
 
 }
@@ -229,7 +230,7 @@ Tabs
 	background: #fff;
 	position: relative;
 	width: 100%;
-	height: 370px;
+	height: 100%;
 	z-index: 5;
 	box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
 	border-radius: 0 3px 3px 3px;
@@ -377,11 +378,11 @@ Popup
 	overflow: auto;
 	width: 100%;
 	padding: 0 10px 0;
-}
+}/*
 #lightbox-image{
 	width: 600px;
 	height:600px;
-}
+}*/
 #lightbox-container-image-data {
 	padding: 0 10px; 
 	color: #666; 

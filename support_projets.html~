@@ -39,6 +39,8 @@
 	
 	    $(function() {
 		$('#gallery a#pop').lightBox();
+		$('#gallery2 a#pop').lightBox();
+		$('#gallery3 a#pop').lightBox();
 	    });
    
         </script>
@@ -85,13 +87,29 @@
 			<div class="clear-shadow"></div>
 		
 			<div class="content"  >
-				<div class="content-1">
+				<div class="content-1" id="gallery">
 						<h2>PHP</h2>
 						<h3>TeXloud</h3>
-							
+					<p class="gal"> Une application qui permet la création, sauvegarde et la compilation d'un fichier LaTex dans le Cloud.</p>
+					<ul>
+							<li>PHP5 pour le serveur HTTP.</li>
+							<li>Python pour le serveur de compilation et stockage.</li>	
+							<li>Java pour l'application Android.</li>
+							<li>MySQL comme base de donnée.</li>		
+					</ul>		
+	
+					<p><a href="https://github.com/Ducatel/TeXloud/archive/master.zip">Source</a></p>
+
+					<a id="pop" href="image/vue-pdf.png" title="">
+						<img src="image/vue-pdf.png" width="72" height="72" alt="" />
+						
+					</a>
+					<a id="pop" href="image/android.png" title="">
+						<img src="image/android.png" width="72" height="72" alt="" />
+					</a>
 
 				</div>
-				<div class="content-2" id="gallery">
+				<div class="content-2" id="gallery2">
 
 
 						<h2>Java</h2>
@@ -138,8 +156,20 @@
 								    </a>
 
 				 </div>
-				<div class="content-3">
-						<h2>C++</h2>
+				<div class="content-3" id="gallery3">
+						<h2>C++</h2>	
+						<h3>Cryptographie : Implémentation d’algorithme RSA avec la bibliothèque GMP</h3>
+						<p class="gal">RSA est une méthode à clef public : tout le monde peut crypter des messages à l'aide de
+						la clef public, mais seul celui qui possède la clef privée de déchiffrement peut décrypter.
+						Concrètement, pour qu'une personne utilise ce système, elle doit créer un couple (clef
+						public, clef privée), puis distribuer la clef publique à ses interlocuteurs. Ceux-ci crypteront
+						leurs messages à l'aide la clef public, que la personne pourra décrypter à l'aide de sa clef
+						privée (qu'elle est la seule à détenir).</p>
+						<p><a href="https://github.com/bouchakor/rsa/archive/master.zip">Source</a></p>
+							            <a id="pop" href="image/rsa.png" title="">
+									<img src="image/rsa.png" width="72" height="72" alt="" />
+								    </a>
+					
 
 				</div>
 				<div class="content-4">
@@ -155,13 +185,15 @@
 				</div>
 				<div class="content-5">
 					<h2>Web</h2>
+					<p class="gal">Tous ces sites ont été réalisés au cours de mon stage chez Fidesio</p>
 					<ul>
 						<li> <a target="_blank" href="http://www.private-test.com/">Private-test</a></li>
 						<li> <a target="_blank" href="http://www.cabourg.net/">Cabourg</a></li>	
 						<li> <a target="_blank" href="http://www.erige.net/">Erige</a></li>
-						<li> .</li>	
-						<li> .</li>
-						<li> .</li>			
+						<li> <a target="_blank" href="http://www.eugenie-louise.com/">Eugenie-louise</a></li>	
+						<li> <a target="_blank" href="http://www.vivre-la-marine.fr/">Vivre-la-marine</a></li>
+						<li> <a target="_blank" href="http://www.coffretpro.fr/	">Coffretpro</a></li>
+						<li> <a target="_blank" href="http://www.bmw-motorrad.fr/fr/fr/index.html">BMW newsletter</a></li>	
 					</ul>
 
 				</div>

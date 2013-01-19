@@ -166,7 +166,7 @@
 						leurs messages à l'aide la clef public, que la personne pourra décrypter à l'aide de sa clef
 						privée (qu'elle est la seule à détenir).</p>
 						<p><a href="https://github.com/bouchakor/rsa/archive/master.zip">Source</a></p>
-							            <a href="image/rsa.png" title="">
+							            <a class="pop" href="image/rsa.png" title="">
 									<img src="image/rsa.png" width="72" height="72" alt="" />
 								    </a>
 					

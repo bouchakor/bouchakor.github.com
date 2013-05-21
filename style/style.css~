@@ -38,7 +38,6 @@ img#perso{
 #contents{
 	position:relative;
 	bottom:49px;
-	right:-18px;
 	color:#999;
 	display:block;
 	height:100%;

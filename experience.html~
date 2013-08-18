@@ -34,12 +34,7 @@
                     }
                 );
             });
-		function age(birthday)
-		{
-		  birthday = new Date(birthday);
-		  return new Number((new Date().getTime() - birthday.getTime()) / 31536000000).toFixed(0);
-		}
-	</script>	
+        </script>	
 	</head>
 
 	<body>
@@ -49,39 +44,63 @@
 		    <li class="search"><a href="experience.html" title="Experiences">Expériences</a></li>
 		    <li class="rssfeed"><a href="support_projets.html" title="Support and Projets">Supports && Projets</a></li>
 		    <li class="podcasts"><a href="cv.html" title="CV">CV</a></li>
-		 
+
+
 		 </ul>
 		<div id="menu">
-		
 		<div class="header">
 			<h2>Zakaria Bouchakor</h2>
-
-		
 		</div>
 
-		    			<img id="perso" src="image/perso.JPG" width="230" height="260" alt="" title="zakaria bouchakor" />
+		
 		
 		</div>
 		
 		<div id="contents">
+			<div class="formation">
+				<h3>Depuis 01-2013</h3> <ul>Ingénieur études et développement chez Osiatis
+				<h3>Stages</h3>
+				
+				<ul>
+					
+					<li><strong>2012</strong> Développement des applications Web, sites Web au sein de l'agence web Fidesio 					(stage de 6 mois).</li>
 			
-			<p>Zakaria Bouchakor 
-			<script type="text/javascript">
+					
+					<li><strong>2010</strong> Déploiement d'un dossier patient informatisé au sein de l’hôpital de Mostaganem avec 							fusion middleware (Application
+				 	   d’hospitalisation Web service), Stage de 3 mois.</li>
+				</ul>
+
 				
-				document.write(age("2 January 1991"));
+				<h3>Projets d'études</h3>
 				
-			</script> ans ingénieur en informatique, issu de la promotion 2011/2012 à l'université du Havre.</p>
+				<ul>
+					
+					<li><strong>2012</strong> TeXloud : le but est de proposer à des plateformes dépourvues de
+					distribution Latex (tablettes, Smartphones, desktops), d'accéder à
+					ces services de gestion et compilation de documents en ligne
+					(PHP5, JQuery, Python, MySQL).
+					</li>
+			
+					
+					<li><strong>2011</strong> Description en langage naturel d’un diagramme UML : élaborer un
+					diagramme UML ou un Design Pattern sous forme d’automate syntaxique pour le projet
+					appelé GrASp (pour Graph Access with Speech) qui vise les
+					personnes en difficulté visuelle.
+					</li>
 
-			<p>Dans ce site, je partage mes différentes expériences professionnelles, projet personnel et universitaire.
-			Le cursus que j'ai suivi est riche en matière de développement web, SGBD (réparti, centralisé) ainsi que l'administration 				des systèmes et la conception d’applications diverses.</p>
-		
-			<p>Vous pouvez me contacter via cette adresse <a HREF="mailto:zakariabouchakor@gmail.com">zakariabouchakor@gmail.com</a>, je vous répondrai dans les plus brefs délais.</p>
+					<li><strong>2009</strong> Développement d'une application pour la gestion de stock, préparation de commande 						et gestion des clients pour une librairie avec Windev.
+					</li>
+				
 
-			<p>Je vous souhaite une excellente visite !</p>
+				</ul>					
+	
 
+
+
+
+			</div>
 			
 		</div>
 
 	</body>
 </html>
-
